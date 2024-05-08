@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please Upload the Excel File</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 30px;
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 30px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        input[type="file"] {
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            outline: none;
+            transition: border-color 0.3s ease;
+            background-color: #fff;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        input[type="file"]:focus {
+            border-color: #f00;
+        }
+        .upload-btn {
+            padding: 12px 25px;
+            background-color: #333;
+            color: #fff;
+            border: 2px solid #333;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .upload-btn:hover {
+            background-color: #f00;
+        }
+        .upload-btn:active {
+            transform: translateY(2px);
+        }
+        .logo-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .logo-container img {
+            width: 150px; /* Increased magnification */
+            height: auto;
+        }
+        .logo-container p {
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Excel File</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".xls,.xlsx">
+            <button type="submit" class="upload-btn">Upload</button>
+        </form>
+        <div class="logo-container">
+            <div>
+                <img src="https://i0.wp.com/mbaconsultant.com/wp-content/uploads/2022/08/MBA-Consultant-graphics-19.png?fit=960%2C540&ssl=1" alt="INSEAD Logo">
+                <p>Developed by Akarsh Srivastava</p>
+            </div>
+            <div>
+                <img src="https://wallpaperaccess.com/full/2467864.png" alt="IIM Bangalore Logo">
+                <p>For the use of Prof. Manaswini and Prof. Vissa</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
